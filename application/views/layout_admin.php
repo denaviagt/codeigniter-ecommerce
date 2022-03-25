@@ -281,10 +281,11 @@
                     </div>
                     <ul class="sidebar-menu">
                         <li class="nav-item dropdown active">
-                            <a href="#" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+                            <a href="<?= site_url('adminpanel/dashboard');?>" class="nav-link"><i
+                                    class="fas fa-fire"></i><span>Dashboard</span></a>
                         </li>
-                        <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Blank
-                                    Page</span></a></li>
+                        <li><a class="nav-link" href="<?= site_url('kategori');?>"><i class="far fa-square"></i>
+                                <span>Kategori</span></a></li>
 
                     </ul>
                 </aside>
