@@ -75,11 +75,11 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'root',
-	'database' => 'db_tokokita',
-	'dbdriver' => 'mysqli',
+	'hostname' => 'ec2-52-73-155-171.compute-1.amazonaws.com',
+	'username' => 'nhaddwusityjng',
+	'password' => 'd13d32eb43b57a5e6688e90811ec388978010fd49ef782045ac9debc3541a5a8',
+	'database' => 'd8i44hs9o9ompj',
+	'dbdriver' => 'pgsql',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
