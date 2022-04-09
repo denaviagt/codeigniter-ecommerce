@@ -286,6 +286,15 @@
                         </li>
                         <li><a class="nav-link" href="<?= site_url('kategori');?>"><i class="far fa-square"></i>
                                 <span>Kategori</span></a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i
+                                    class="fas fa-columns"></i> <span>Jasa Pengiriman</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="<?= site_url('kota');?>">Kota</a></li>
+                                <li><a class="nav-link" href="<?= site_url('kurir');?>">Kurir</a></li>
+                                <li><a class="nav-link" href="<?= site_url('biayakirim');?>">Biaya Kirim</a></li>
+                            </ul>
+                        </li>
 
                     </ul>
                 </aside>
