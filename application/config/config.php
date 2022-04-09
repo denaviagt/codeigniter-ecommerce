@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost:8888/kuliah/tokokita_21.22.2476/';
+$config['base_url'] = 'https://pa-pow.herokuapp.com/';
 
 /*
 |--------------------------------------------------------------------------
