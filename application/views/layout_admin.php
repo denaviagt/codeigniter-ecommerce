@@ -295,7 +295,8 @@
                                 <li><a class="nav-link" href="<?= site_url('biayakirim');?>">Biaya Kirim</a></li>
                             </ul>
                         </li>
-
+                        <li><a class="nav-link" href="<?= site_url('member');?>"><i class="far fa-square"></i>
+                                <span>Member</span></a></li>
                     </ul>
                 </aside>
             </div>
