@@ -9,4 +9,10 @@ class M_login extends CI_Model {
         return $q;
     }
 
+    public function cek_login_member($u, $p)
+    {
+        $q = $this->db->get_where('tbl_member', array('username'=> $u, 'password'=> $p));
+        return $q;
+    }
+
 }

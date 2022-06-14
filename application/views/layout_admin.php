@@ -109,7 +109,7 @@
                     </div>
                 </form>
                 <ul class="navbar-nav navbar-right">
-                    <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+                    <!-- <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
                             class="nav-link nav-link-lg message-toggle beep"><i class="far fa-envelope"></i></a>
                         <div class="dropdown-menu dropdown-list dropdown-menu-right">
                             <div class="dropdown-header">Messages
@@ -185,84 +185,24 @@
                                 <a href="#">View All <i class="fas fa-chevron-right"></i></a>
                             </div>
                         </div>
-                    </li>
-                    <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-                            class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
-                        <div class="dropdown-menu dropdown-list dropdown-menu-right">
-                            <div class="dropdown-header">Notifications
-                                <div class="float-right">
-                                    <a href="#">Mark All As Read</a>
-                                </div>
-                            </div>
-                            <div class="dropdown-list-content dropdown-list-icons">
-                                <a href="#" class="dropdown-item dropdown-item-unread">
-                                    <div class="dropdown-item-icon bg-primary text-white">
-                                        <i class="fas fa-code"></i>
-                                    </div>
-                                    <div class="dropdown-item-desc">
-                                        Template update is available now!
-                                        <div class="time text-primary">2 Min Ago</div>
-                                    </div>
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    <div class="dropdown-item-icon bg-info text-white">
-                                        <i class="far fa-user"></i>
-                                    </div>
-                                    <div class="dropdown-item-desc">
-                                        <b>You</b> and <b>Dedik Sugiharto</b> are now friends
-                                        <div class="time">10 Hours Ago</div>
-                                    </div>
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    <div class="dropdown-item-icon bg-success text-white">
-                                        <i class="fas fa-check"></i>
-                                    </div>
-                                    <div class="dropdown-item-desc">
-                                        <b>Kusnaedi</b> has moved task <b>Fix bug header</b> to <b>Done</b>
-                                        <div class="time">12 Hours Ago</div>
-                                    </div>
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    <div class="dropdown-item-icon bg-danger text-white">
-                                        <i class="fas fa-exclamation-triangle"></i>
-                                    </div>
-                                    <div class="dropdown-item-desc">
-                                        Low disk space. Let's clean it!
-                                        <div class="time">17 Hours Ago</div>
-                                    </div>
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    <div class="dropdown-item-icon bg-info text-white">
-                                        <i class="fas fa-bell"></i>
-                                    </div>
-                                    <div class="dropdown-item-desc">
-                                        Welcome to Stisla template!
-                                        <div class="time">Yesterday</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="dropdown-footer text-center">
-                                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </li>
+                    </li> -->
                     <li class="dropdown"><a href="#" data-toggle="dropdown"
                             class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                             <img alt="image" src="<?php echo base_url('assets/admin/assets/img/avatar/avatar-1.png') ?>"
                                 class="rounded-circle mr-1">
-                            <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div>
+                            <div class="d-sm-none d-lg-inline-block"> <?= $_SESSION['userName']; ?></div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
                             <div class="dropdown-title">Logged in 5 min ago</div>
                             <a href="features-profile.html" class="dropdown-item has-icon">
                                 <i class="far fa-user"></i> Profile
                             </a>
-                            <a href="features-activities.html" class="dropdown-item has-icon">
+                            <!-- <a href="features-activities.html" class="dropdown-item has-icon">
                                 <i class="fas fa-bolt"></i> Activities
                             </a>
                             <a href="features-settings.html" class="dropdown-item has-icon">
                                 <i class="fas fa-cog"></i> Settings
-                            </a>
+                            </a> -->
                             <div class="dropdown-divider"></div>
                             <a href="<?= site_url('login/logout');?>" class="dropdown-item has-icon text-danger">
                                 <i class="fas fa-sign-out-alt"></i> Logout
@@ -274,7 +214,7 @@
             <div class="main-sidebar">
                 <aside id="sidebar-wrapper">
                     <div class="sidebar-brand">
-                        <a href="index.html">Stisla</a>
+                        <a href="index.html">Powcommerce</a>
                     </div>
                     <div class="sidebar-brand sidebar-brand-sm">
                         <a href="index.html">St</a>
@@ -284,18 +224,18 @@
                             <a href="<?= site_url('adminpanel/dashboard');?>" class="nav-link"><i
                                     class="fas fa-fire"></i><span>Dashboard</span></a>
                         </li>
-                        <li><a class="nav-link" href="<?= site_url('kategori');?>"><i class="far fa-square"></i>
+                        <li><a class="nav-link" href="<?= site_url('kategori');?>"><i class="far fa-list-alt"></i>
                                 <span>Kategori</span></a></li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i
-                                    class="fas fa-columns"></i> <span>Jasa Pengiriman</span></a>
+                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"> <i
+                                    class="fas fa-truck"></i><span>Jasa Pengiriman</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="<?= site_url('kota');?>">Kota</a></li>
                                 <li><a class="nav-link" href="<?= site_url('kurir');?>">Kurir</a></li>
                                 <li><a class="nav-link" href="<?= site_url('biayakirim');?>">Biaya Kirim</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-link" href="<?= site_url('member');?>"><i class="far fa-square"></i>
+                        <li><a class="nav-link" href="<?= site_url('member');?>"><i class="fas fa-users"></i>
                                 <span>Member</span></a></li>
                     </ul>
                 </aside>
